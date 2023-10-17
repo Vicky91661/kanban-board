@@ -1,0 +1,13 @@
+.layout {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.layout .children {
+  height: calc(100vh - 62.5px);
+  width: 100%;
+  overflow-y: scroll;
+  background-color: whitesmoke;
+  padding: 2rem 3rem;
+}

@@ -1,0 +1,29 @@
+.kanbanCategory {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+}
+
+.kanbanCategory .header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.kanbanCategory .header .group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.kanbanCategory .header .group span {
+  color: var(--text-color);
+}
+
+.kanbanCategory .cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

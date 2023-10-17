@@ -1,0 +1,47 @@
+.kabnabCard {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+.kabnabCard .identity {
+  display: flex;
+  align-items: center;
+}
+
+.kabnabCard .identity .id {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: var(--text-color);
+  font-size: 1rem;
+  flex: 1;
+}
+
+.kabnabCard .description {
+  display: flex;
+  gap: 5px;
+}
+
+.kabnabCard .description .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.kabnabCard .circleicon {
+  background-color: #959393;
+  border-radius: 50%;
+}
+
+.kabnabCard .meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}

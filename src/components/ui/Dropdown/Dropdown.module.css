@@ -1,0 +1,58 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: 1px solid var(--disabled-color);
+  border-radius: 3px;
+  background-color: white;
+  padding: 5px 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  font-size: 1rem;
+}
+
+.dropdown .dropdownContainer {
+  visibility: hidden;
+  position: absolute;
+  bottom: -20;
+  left: 0;
+  margin-top: 10px;
+  height: 0;
+  border: 1px solid var(--disabled-color);
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  transition: height 100ms ease;
+  background-color: var(--background-color);
+  z-index: 1;
+}
+
+.dropdown .dropdownContainer.show {
+  visibility: visible;
+  min-width: max-content;
+  height: auto;
+  max-height: 300px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.dropdown .dropdownContainer .form {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1rem;
+}
+
+.dropdown .dropdownContainer .form label {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.dropdown .dropdownContainer .form select {
+  border: 1px solid var(--disabled-color);
+  border-radius: 3px;
+  padding: 3px 8px;
+}
